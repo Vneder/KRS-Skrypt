@@ -2,10 +2,10 @@ const fetchData = require('./scripts/fetchData');
 const processData = require('./scripts/processData');
 
 async function main() {
-    // Krok 1: Pobierz listę KRS i zapisz do pliku
+    // Pobranie aktywnych wpisów KRS i zapis do pliku krsList.json
     await fetchData();
 
-    // Krok 2: Przetwórz dane z listy KRS i zapisz do pliku Excel
+    // Przetworzenie danych i zapis do excela
     await processData();
 }
 
